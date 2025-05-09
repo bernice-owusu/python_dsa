@@ -10,7 +10,8 @@ def heaviest_num(myList):
     results = {}
     for val in myList:
         pair_str = list(str(val))
-        pair = list(map(int,pair_str))
+        # pair = list(map(int,pair_str))
+        pair = [int(item) for item in pair_str]
         pair_sum = sum(pair)
 
         results[val] = pair_sum
