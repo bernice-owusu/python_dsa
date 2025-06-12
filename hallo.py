@@ -35,6 +35,19 @@ def validate_hello(greetings):
         return False
         
 
+
+
+# Update 
+
+def validate_hello2(greetings):
+    versions = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
+    greeting = greetings.lower()
+    for version in versions:
+        if version in greeting:
+            return True
+    return False
+
+    
     
 
 print(validate_hello('ArE, homBre! haLlo hOmbrE'))
